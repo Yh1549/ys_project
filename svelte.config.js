@@ -1,6 +1,6 @@
 import staticAdapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/kit/vite";
-const dev = process.argv.includes("dev");
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
@@ -15,7 +15,7 @@ const config = {
       strict: true,
     }),
     paths: {
-      base: dev ? "" : "/ys_project",
+      base: "/ys_project",
     },
   },
   preprocess: vitePreprocess(),
