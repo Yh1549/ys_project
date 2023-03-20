@@ -2,38 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" />
+    <link rel="icon" href="/ys_project/favicon.png" />
     <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="content-security-policy" content="" />
-    <link rel="modulepreload" href="./_app/immutable/entry/start.69b14e1d.js" />
-    <link
-      rel="modulepreload"
-      href="./_app/immutable/chunks/index.8b13e7af.js"
-    />
-    <link
-      rel="modulepreload"
-      href="./_app/immutable/chunks/singletons.c3113503.js"
-    />
-    <link rel="modulepreload" href="./_app/immutable/entry/app.32658ad1.js" />
+    <meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="/ys_project/_app/immutable/entry/start.9061dbce.js">
+		<link rel="modulepreload" href="/ys_project/_app/immutable/chunks/index.8b13e7af.js">
+		<link rel="modulepreload" href="/ys_project/_app/immutable/chunks/singletons.c7c81b24.js">
+		<link rel="modulepreload" href="/ys_project/_app/immutable/entry/app.1bfb85c3.js">
   </head>
   <body data-sveltekit-preload-data="hover" class="bg-black">
     <div style="display: contents">
-      <script>
-        {
-          __sveltekit_1xobxnj = {
-            env: {},
-            base: "",
-            element: document.currentScript.parentElement,
-          };
+			<script>
+				{
+					__sveltekit_duax6c = {
+						env: {},
+						assets: "/ys_project",
+						base: "/ys_project",
+						element: document.currentScript.parentElement
+					};
 
-          Promise.all([
-            import("./_app/immutable/entry/start.69b14e1d.js"),
-            import("./_app/immutable/entry/app.32658ad1.js"),
-          ]).then(([kit, app]) => {
-            kit.start(app, __sveltekit_1xobxnj.element);
-          });
-        }
-      </script>
-    </div>
+					Promise.all([
+						import("/ys_project/_app/immutable/entry/start.9061dbce.js"),
+						import("/ys_project/_app/immutable/entry/app.1bfb85c3.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_duax6c.element);
+					});
+				}
+			</script>
+		</div>
   </body>
 </html>

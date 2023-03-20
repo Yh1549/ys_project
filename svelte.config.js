@@ -1,5 +1,6 @@
 import staticAdapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/kit/vite";
+const dev = process.argv.includes("dev");
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
@@ -7,8 +8,15 @@ const config = {
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: staticAdapter({
+      pages: "build",
+      assets: "build",
       fallback: "index.html",
+      precompress: false,
+      strict: true,
     }),
+    paths: {
+      base: dev ? "" : "/ys_project",
+    },
   },
   preprocess: vitePreprocess(),
 };
