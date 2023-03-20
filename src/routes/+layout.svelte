@@ -7,5 +7,4 @@ export const prerender = true;
     <Header />
     <main/>
     <Footer />
-
 <slot/>
