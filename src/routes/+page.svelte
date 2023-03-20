@@ -4,7 +4,7 @@
 
 // let picArray= ['https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/8cdcf1154323267.633fdd6b3efb6.jpg','/assets/home_pic_two.jpeg','/assets/home_pic_three.jpg'];
 $: picCurrent = 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/8cdcf1154323267.633fdd6b3efb6.jpg';
-$: picCurrent1 = '/assets/home_pic_two.jpeg';
+$: picCurrent1 = 'assets/home_pic_two.jpeg';
 // let picLoop = ()=>{
 //   for(let i = 0 ;i<=picArray.length - 1;i++){
 //       if(picCurrent == picArray[i]){
