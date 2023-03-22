@@ -4,7 +4,7 @@ import Footer from "../components/footer.svelte";
 export const prerender = true;
   </script>
 
-    <Header />
+  <Header />
     <main/>
-    <Footer />
-<slot/>
+    <slot/>
+   <Footer />
